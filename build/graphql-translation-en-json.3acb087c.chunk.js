@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdatabase_uts=self.webpackChunkdatabase_uts||[]).push([[9605],{23428:e=>{e.exports=JSON.parse('{"plugin.description.long":"Adds GraphQL endpoint with default API methods.","plugin.description.short":"Adds GraphQL endpoint with default API methods.","plugin.name":"GraphQL"}')}}]);

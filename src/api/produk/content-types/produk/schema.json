@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produks",
+  "info": {
+    "singularName": "produk",
+    "pluralName": "produks",
+    "displayName": "produk",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "deskripsi": {
+      "type": "richtext"
+    },
+    "harga": {
+      "type": "integer"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "terjual": {
+      "type": "integer"
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "stock": {
+      "type": "integer"
+    },
+    "minPembelian": {
+      "type": "integer"
+    },
+    "bestSeller": {
+      "type": "boolean"
+    },
+    "kategori": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::kategori.kategori",
+      "inversedBy": "produk"
+    },
+    "foto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "promo": {
+      "type": "boolean"
+    },
+    "promoPercentage": {
+      "type": "integer"
+    },
+    "berat": {
+      "type": "integer"
+    },
+    "stok": {
+      "type": "integer"
+    },
+    "nama_toko": {
+      "type": "string"
+    },
+    "alamat_toko": {
+      "type": "string"
+    }
+  }
+}
